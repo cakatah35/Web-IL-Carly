@@ -687,11 +687,11 @@ img.PBB{
     display: block;
 }
 
-a{
+.pustaka a{
     color: cadetblue;
 }
-a:visited{color: cadetblue;}
-a:hover{color: rgb(49, 105, 107);}
+.pustaka a:visited{color: cadetblue;}
+.pustaka a:hover{color: rgb(49, 105, 107);}
 
 .ttngku p{
     font-size: 20px;
@@ -753,3 +753,4 @@ div.inlinep{
     border: solid 2px #b2f5ff;
 
 }
+
