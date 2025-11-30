@@ -32,6 +32,7 @@ header img {
 .dropbtn{
     min-width: 200px;
     border-bottom: 1px solid #b2f5ff;
+    color: black;
 }
 
 /* --- NAVIGATION BAR --- */
@@ -754,4 +755,5 @@ div.inlinep{
     color: cadetblue;
     border: solid 2px #b2f5ff;
 }
+
 
