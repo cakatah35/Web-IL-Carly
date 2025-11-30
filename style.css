@@ -1,0 +1,754 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* --- HEADER --- */
+header {
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    margin-top: 51px;
+    padding: 0;
+    z-index: 1000;
+    font-family: "Caudex", serif;
+}
+
+/* ensure header image has no unwanted spacing */
+header img {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.dropbtn{
+    min-width: 200px;
+    border-bottom: 1px solid #b2f5ff;
+}
+
+/* --- NAVIGATION BAR --- */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    z-index: 1100;
+    height: 50px;
+}
+
+/* Remove default spacing */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    font-family: "Caudex", serif;
+}
+
+nav ul li {
+    position: relative;   /* important for dropdown positioning */
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ddfaff;
+    color: cadetblue;
+}
+
+
+/* --- DROPDOWN (your actual system using .dropdown-content) --- */
+
+.dropdown {
+    position: relative;  /* parent for absolutely positioned dropdown */
+    min-width: 255px;
+}
+
+/* hide dropdown by default */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffffa5;
+    min-width: 255px;
+    width: 100%;
+    left: 0;
+    top: 50px; /* Same height as the nav bar */
+    z-index: 1200;
+    border: 1px solid #b2f5ff;
+    font-size: 17px;
+}
+
+/* dropdown items */
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: black;
+    text-align: left;
+    text-decoration: none;
+    border-bottom: 1px solid #b2f5ff;
+}
+
+.dropdown-content a:hover {
+    background-color: #ffffff;
+}
+
+/* show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* --- GENERAL PAGE FIX --- */
+/* Push page content BELOW the fixed header */
+main{
+    margin-top: 0;
+    /* optional: padding: 20px, for content spacing */
+    font-family: "Caudex", serif;
+}
+    
+main h1, main h2, main p{
+    min-width: 900px;
+    margin-top: 0;
+}
+
+body{
+    margin: 0px;
+    padding: 0;
+    font-family: "Caudex", serif;
+}
+
+h1{
+    font-size: 27px;
+}
+
+p{
+    font-size: 20px;
+}
+
+div.hello{
+    top: 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 1000px;
+    text-align: center;
+}
+
+.pengertian{
+    top: 0;
+    text-align: justify;
+    padding: 100px;
+    background-color: #ddfaff;
+    padding: 100px;
+    padding-left: 270px;
+    padding-right: 270px;
+}
+
+.pengertian h1{
+    margin-bottom: 0;
+}
+
+div.inline{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+div.inlinel{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.inlinel p{
+    margin-top: 0;
+    padding-right: 5px;
+}
+
+div.inlinels{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.inlinels p{
+    margin-top: 0;
+}
+
+div.inlines{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.inlines p{
+    margin-top: 0;
+}
+
+.in{
+    width: 800px;
+}
+
+.inline p{
+    margin-top: 0;
+    padding-right: 25px;
+}
+
+
+img.SDGS{
+    width: 250px;
+    height: 250px;
+}
+
+div.tujuan{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding: 100px;
+}
+
+.tujuan h1{
+    padding-bottom: 50px;
+    padding-top: 100px;
+}
+
+:root {
+    --primary-color: #4361ee;
+    --secondary-color: #3f37c9;
+    --accent-color: #4cc9f0;
+    --dark-color: #1a1a2e;
+    --light-color: #f8f9fa;
+    --transition-speed: 0.3s;
+}
+
+.gallery-title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: var(--accent-color);
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    width: 100%;
+    max-width: 1500px;
+    display: flex;
+    gap: 1rem;
+    height: 200px;
+}
+
+main {
+    background-color: white;
+    color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.animation{
+    transition: 0.5s;
+}
+
+.animation:hover{
+    transform: scale(1.2);
+    z-index: 2;
+}
+
+.centerimg{
+    transition: 0.5s;
+}
+
+.centerimg:hover{
+    transform: scale(1.05);
+    z-index: 2;
+}
+
+.panel {
+    position: relative;
+    flex: 1;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: flex var(--transition-speed) ease;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.panel.active {
+    flex: 5;
+}
+
+.panel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-speed) ease;
+}
+
+.panel.active img {
+    transform: scale(1.02);
+}
+
+.panel .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), hsla(0, 0%, 0%, 0.7), transparent);
+    transform: translateY(100%);
+    transition: transform var(--transition-speed) ease;
+    color: white;
+}
+
+.panel.active .content {
+    transform: translateY(0);
+}
+
+.panel h3 {
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+    opacity: 0;
+    transition: opacity var(--transition-speed) ease 0.1s;
+    color: white;
+}
+
+.panel.active h3 {
+    opacity: 1;
+}
+
+.panel .tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    opacity: 0;
+    transition: opacity var(--transition-speed) ease 0.3s;
+}
+
+.panel.active .tags {
+    opacity: 1;
+}
+
+.tag {
+    background-color: var(--accent-color);
+    color: var(--dark-color);
+    padding: 0.3rem 0.8rem;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .gallery-title {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .panel {
+        width: 100%;
+        height: 120px;
+    }
+
+    .panel.active {
+        height: 350px;
+    }
+}
+
+.penjelasan{
+    top: 0;
+    left: 0;
+    text-align: justify;
+    padding-bottom: 100px;
+    width: 1200px;
+}
+
+.penjelasan h1{
+    padding-bottom: 5px;
+    margin-bottom: 0;
+}
+
+.penjelasan li{
+        font-size: 22px;
+}
+
+.penjelasan p{
+    font-size: 20px;
+}
+
+.pbb{
+    padding-left: 270px;
+    padding-right: 270px;
+    text-align: justify;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    background-color: #ddfaff;
+}
+
+.pbb li{
+    font-size: 20px;
+}
+
+img.PBB{
+    width: 250px;
+    height: 250px;
+}
+
+.tujuan-pbb p{
+    font-size: 22px;
+}
+
+.in p{
+    width: 1200px;
+}
+
+.kontribusi{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 1200px;
+    text-align: justify;
+}
+.spesifik{
+    width: 1200px;
+    text-align: justify;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+.sdg14{
+    width: 250px;
+    height: 250px;
+}
+
+.info-terkini{
+    background-color: #ddfaff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 270px;
+    padding-right: 270px;
+
+}
+
+.info-terkini ul{
+    width: 1200px;
+    text-align: justify;
+    padding-top: 15px;
+}
+
+.head{
+    width: 1200px;
+    height: auto;
+}
+
+.intervensi-program h2{
+    font-size: 23px;
+}
+
+.unpulse{
+    width: 205px;
+    height: 205px;
+}
+
+.tantangan{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 1200px;
+    text-align: justify;
+}
+
+.terumbuindo{
+    width: 305px;
+    height: 230px;
+}
+
+.banksampah{
+    width: 305px;
+    height: 230px;
+}
+
+.potensi{
+    background-color: #ddfaff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 270px;
+    padding-right: 270px;
+    text-align: justify;
+}
+
+.ekosistemlaut{
+    width: 305px;
+    height: 212px;
+}
+
+.petakawasan{
+    width: 95%;
+    height: 95%;
+}
+
+.inovasisiswa{
+    width: 305px;
+    height: 204px;
+}
+
+.peranmasyarakat{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 1200px;
+    text-align: justify;
+}
+
+.contohtindakan{
+    text-align: justify;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    width: 1200px;
+}
+
+.transplantasi{
+    width: 440px;
+    height: 194px;
+}
+
+.nelayan{
+    width: 480px;
+    height: 213px;
+}
+
+.rekomendasiku{
+    background-color: #ddfaff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 270px;
+    padding-right: 270px;
+}
+
+.rekomendasiku ul{
+    width: 1200px;
+    text-align: justify;
+    padding-top: 15px;
+}
+
+.rekomendasiku li{
+    font-size: 23px;
+}
+
+.banggai{
+    width: 905px;
+    height: 814px;
+}
+
+.tech{
+    width: 905px;
+    height: 811px;
+}
+
+.initiative{
+    width: 1105px;
+    height: 672px;
+}
+
+.ker-sm{
+    top: 0;
+    left: 0;
+    text-align: justify;
+    padding-bottom: 100px;
+    width: 1200px;
+}
+
+.ker-sm p, ol, ul{
+    font-size: 20px;
+}
+
+.bilateral{
+    padding-left: 270px;
+    padding-right: 270px;
+    text-align: justify;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    background-color: #ddfaff;
+}
+
+.bilateral ol .regional ol{
+    width: 1200px;
+}
+
+.solusi p{
+    width: 1200px;
+}
+
+.indoaus{
+    width: 1185px;
+    height: 874pxs;
+}
+
+.indocin{
+    width: 1175px;
+    height: 650px;
+}
+
+.workshop{
+    width: 1181px;
+    height: 853px;
+}
+
+.regional{
+    text-align: justify;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    width: 1200px;
+}
+
+.seaconnect{
+    width: 1161px;
+    height: 970px;
+}
+
+.enmaps{
+    width: 1161px;
+    height: 704px;
+}
+
+.multilateral{
+    padding-left: 270px;
+    padding-right: 270px;
+    text-align: justify;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    background-color: #ddfaff;    
+}
+
+.ilustrasi{
+    width: 150px;
+    height: 150px;
+}
+
+.ttngku h1 {
+    text-align: center;
+}
+
+.closing{
+    text-align: center;
+}
+
+.ttngku{
+    top: 0;
+    text-align: justify;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 1200px;
+}
+
+.pustaka h1{
+    text-align: center;
+}
+
+.pustaka{
+    top: 0;
+    text-align: justify;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 1300px;
+}
+
+.pustaka li{
+    background-color: #e0fbff;
+    transition: 0.5s;
+}
+
+.pustaka li:hover{
+    transform: scale(1.05);
+}
+
+.pustaka ul{
+    display: block;
+}
+
+a{
+    color: cadetblue;
+}
+a:visited{color: cadetblue;}
+a:hover{color: rgb(49, 105, 107);}
+
+.ttngku p{
+    font-size: 20px;
+}
+
+div.inlinep{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* icon style */
+.sub-icon {
+    height: 45px;
+    margin-right: 8px;
+}
+
+.caudex-regular {
+  font-family: "Caudex", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.caudex-bold {
+  font-family: "Caudex", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.caudex-regular-italic {
+  font-family: "Caudex", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.caudex-bold-italic {
+  font-family: "Caudex", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.backtotop{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffffffa4;
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    border: solid 2px #b2f5ff;
+    transition: background-color 0.3s ease;
+}
+
+.backtotop:hover{
+    background-color: white;
+    color: cadetblue;
+    border: solid 2px #b2f5ff;
+}
