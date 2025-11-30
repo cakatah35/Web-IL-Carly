@@ -55,6 +55,8 @@ nav ul {
     width: 100%;
     display: flex;
     font-family: "Caudex", serif;
+    color: black;
+
 }
 
 nav ul li {
@@ -752,3 +754,4 @@ div.inlinep{
     color: cadetblue;
     border: solid 2px #b2f5ff;
 }
+
